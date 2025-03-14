@@ -1,4 +1,50 @@
-/* Fa que els submenús es posicionin correctament */
+/* Estilos generales */
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer.relative-footer {
+    position: relative;
+}
+
+/* Estilos para el carrusel */
+.carousel-inner {
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4), -2px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev {
+    margin-left: 10%;
+}
+
+.carousel-control-next {
+    margin-right: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Estilos para el breadcrumb */
+.breadcrumb {
+    padding-left: 50px;
+}
+
+/* Estilos para el dropdown */
 .dropdown-menu {
     position: absolute;
     left: 100%;
@@ -13,7 +59,7 @@
     margin-left: 0.1rem;
 }
 
-/* Estilo para el mensaje de bienvenida */
+/* Estilos para el mensaje de bienvenida */
 .welcome-message {
     margin-left: auto !important;
     margin-right: 2rem !important;

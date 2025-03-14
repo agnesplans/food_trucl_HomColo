@@ -8,19 +8,8 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles.css">
 
-    <style>
-        .icon {
-            width: 30px;
-            height: 30px;
-            margin-left: 15px;
-        }
 
-        footer {
-            position:fixed;
-        bottom: 0;
-        width: 100%;
-    }
-    </style>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -37,58 +26,59 @@
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="foodDropdown" role="button" data-bs-toggle="dropdown">
-                            Menjar
+                            Comida
                         </a>
                         <ul class="dropdown-menu">
-                            <!-- Categoria FREDs -->
+                            <!-- Categoria FRÍOS -->
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">Freds</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Fríos</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../freds1.html">Bocata</a></li>
-                                    <li><a class="dropdown-item" href="ensalada.html">Ensalada</a></li>
-                                    <li><a class="dropdown-item" href="../freds3.html">Sushi</a></li>
+                                    <li><a class="dropdown-item" href="freds1.html">Bocadillo</a></li>
+                                    <li><a class="dropdown-item" href="html/ensalada.html">Ensalada</a></li>
+                                    <li><a class="dropdown-item" href="freds3.html">Sushi</a></li>
                                 </ul>
                             </li>
-                            <!-- Categoria CALENTS -->
+                            <!-- Categoria CALIENTES -->
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">Calents</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Calientes</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../calents1.html">Hamburguesa</a></li>
-                                    <li><a class="dropdown-item" href="../calents2.html">Pizza</a></li>
-                                    <li><a class="dropdown-item" href="spaguetti.html">Spaguetti</a></li>
-                                    <li><a class="dropdown-item" href="tortilla.html">Tortilla</a></li>
-                                    <li><a class="dropdown-item" href="../calents5.html">Carne</a></li>
-                                    <li><a class="dropdown-item" href="pez.html">Pez</a></li>
+                                    <li><a class="dropdown-item" href="calents1.html">Hamburguesa</a></li>
+                                    <li><a class="dropdown-item" href="calents2.html">Pizza</a></li>
+                                    <li><a class="dropdown-item" href="calents3.html">Espagueti</a></li>
+                                    <li><a class="dropdown-item" href="calents4.html">Tortilla</a></li>
+                                    <li><a class="dropdown-item" href="calents5.html">Carne</a></li>
+                                    <li><a class="dropdown-item" href="calents6.html">Pescado</a></li>
                                 </ul>
                             </li>
-                            <!-- Categoria DOLÇOS -->
+                            <!-- Categoria DULCES -->
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">Dolços</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Dulces</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../dolcos1.html">Gelat Magnum</a></li>
-                                    <li><a class="dropdown-item" href="../dolcos2.html">Crêpe xocolata</a></li>
-                                    <li><a class="dropdown-item" href="../dolcos3.html">Donut</a></li>
-                                    <li><a class="dropdown-item" href="../dolcos4.html">Brownie</a></li>
+                                    <li><a class="dropdown-item" href="dolcos1.html">Helado Magnum</a></li>
+                                    <li><a class="dropdown-item" href="dolcos2.html">Crêpe de chocolate</a></li>
+                                    <li><a class="dropdown-item" href="dolcos3.html">Donut</a></li>
+                                    <li><a class="dropdown-item" href="dolcos4.html">Brownie</a></li>
                                 </ul>
                             </li>
-                            <!-- Categoria BEGUDES -->
+                            <!-- Categoria BEBIDAS -->
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">Begudes</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Bebidas</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../begudes1.html">Coca-Cola</a></li>
-                                    <li><a class="dropdown-item" href="../begudes2.html">Cervesa</a></li>
-                                    <li><a class="dropdown-item" href="../begudes3.html">Fanta</a></li>
-                                    <li><a class="dropdown-item" href="../begudes4.html">Aigua</a></li>
+                                    <li><a class="dropdown-item" href="begudes1.html">Coca-Cola</a></li>
+                                    <li><a class="dropdown-item" href="begudes2.html">Cerveza</a></li>
+                                    <li><a class="dropdown-item" href="begudes3.html">Fanta</a></li>
+                                    <li><a class="dropdown-item" href="begudes4.html">Agua</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="qui-som.html">Qui som</a>
+                        <a class="nav-link" href="qui-som.html">Quiénes somos</a>
                     </li>
                 </ul>
                 <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-                <button class="btn btn-outline-danger">Logout</button>
+                <button class="btn btn-outline-danger" id="logoutButton">Logout</button>
             </div>
         </div>
     </nav>
@@ -182,6 +172,7 @@
         </div>
     </footer>
     <script src="js/like_dislike.js"></script>
+    <script src="../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

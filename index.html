@@ -5,21 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Food Truck</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">-->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .icon {
-            width: 30px;
-            height: 30px;
-            margin-left: 15px;
-        }
-
-    footer {
-        bottom: 0;
-        width: 100%;
-    }
-    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -36,55 +23,55 @@
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="foodDropdown" role="button" data-bs-toggle="dropdown">
-                            Menjar
+                            Comida
                         </a>
                         <ul class="dropdown-menu">
-                            <!-- Categoria FREDs -->
+                            <!-- Categoria FRÍOS -->
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">Freds</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Fríos</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="freds1.html">Bocata</a></li>
+                                    <li><a class="dropdown-item" href="freds1.html">Bocadillo</a></li>
                                     <li><a class="dropdown-item" href="html/ensalada.html">Ensalada</a></li>
                                     <li><a class="dropdown-item" href="freds3.html">Sushi</a></li>
                                 </ul>
                             </li>
-                            <!-- Categoria CALENTS -->
+                            <!-- Categoria CALIENTES -->
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">Calents</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Calientes</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="calents1.html">Hamburguesa</a></li>
                                     <li><a class="dropdown-item" href="calents2.html">Pizza</a></li>
-                                    <li><a class="dropdown-item" href="html/spaguetti.html">Spaguetti</a></li>
+                                    <li><a class="dropdown-item" href="calents3.html">Espagueti</a></li>
                                     <li><a class="dropdown-item" href="calents4.html">Tortilla</a></li>
                                     <li><a class="dropdown-item" href="calents5.html">Carne</a></li>
-                                    <li><a class="dropdown-item" href="html/pez.html">Pez</a></li>
+                                    <li><a class="dropdown-item" href="calents6.html">Pescado</a></li>
                                 </ul>
                             </li>
-                            <!-- Categoria DOLÇOS -->
+                            <!-- Categoria DULCES -->
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">Dolços</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Dulces</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="dolcos1.html">Gelat Magnum</a></li>
-                                    <li><a class="dropdown-item" href="dolcos2.html">Crêpe xocolata</a></li>
+                                    <li><a class="dropdown-item" href="dolcos1.html">Helado Magnum</a></li>
+                                    <li><a class="dropdown-item" href="dolcos2.html">Crêpe de chocolate</a></li>
                                     <li><a class="dropdown-item" href="dolcos3.html">Donut</a></li>
                                     <li><a class="dropdown-item" href="dolcos4.html">Brownie</a></li>
                                 </ul>
                             </li>
-                            <!-- Categoria BEGUDES -->
+                            <!-- Categoria BEBIDAS -->
                             <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#">Begudes</a>
+                                <a class="dropdown-item dropdown-toggle" href="#">Bebidas</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="begudes1.html">Coca-Cola</a></li>
-                                    <li><a class="dropdown-item" href="begudes2.html">Cervesa</a></li>
+                                    <li><a class="dropdown-item" href="begudes2.html">Cerveza</a></li>
                                     <li><a class="dropdown-item" href="begudes3.html">Fanta</a></li>
-                                    <li><a class="dropdown-item" href="begudes4.html">Aigua</a></li>
+                                    <li><a class="dropdown-item" href="begudes4.html">Agua</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="qui-som.html">Qui som</a>
+                        <a class="nav-link" href="qui-som.html">Quiénes somos</a>
                     </li>
                 </ul>
                 <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
@@ -98,21 +85,21 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Login</h5>
+                    <h5 class="modal-title">Iniciar sesión</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="loginForm"> <!-- Afegeix aquest ID si no el tens -->
+                    <form id="loginForm">
                         <div class="mb-3">
-                            <label class="form-label">Usuari</label>
+                            <label class="form-label">Usuario</label>
                             <input type="text" class="form-control" id="username">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Contrasenya</label>
+                            <label class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="password">
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
-                        <button type="button" class="btn btn-secondary" id="cancelButton" data-bs-dismiss="modal">Cancel·lar</button>
+                        <button type="button" class="btn btn-secondary" id="cancelButton" data-bs-dismiss="modal">Cancelar</button>
                     </form>
                 </div>
             </div>
@@ -121,7 +108,7 @@
     <!-- Breadcrumb -->
      <br>
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb" style="padding-left: 50px;">
+        <ol class="breadcrumb">
             <li class="breadcrumb-item active"><a href="index.html">Inicio</a></li>
         </ol>
     </nav>
@@ -129,39 +116,38 @@
     <br>
     <!-- Carrusel -->
     <div id="carouselExample" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
-        <div class="carousel-inner w-50 rounded-5">
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="img/bocata.jpg" class="d-block w-100" alt="Bocata">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 style="background-color: rgba(0, 0, 0, 0.5);">Delicioso bocata de jamón ibérico</h2>
+                    <h2>Delicioso bocata de jamón ibérico</h2>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/hamburguesa.jpg" class="d-block w-100" alt="Hamburguesa">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 style="background-color: rgba(0, 0, 0, 0.5);">Jugosa hamburguesa con queso</h2>
+                    <h2>Jugosa hamburguesa con queso</h2>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/pizza.jpg" class="d-block w-100" alt="Pizza">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 style="background-color: rgba(0, 0, 0, 0.5);">Pizza de pepperoni recién horneada</h2>
+                    <h2>Pizza de pepperoni recién horneada</h2>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/sushi.jpg" class="d-block w-100" alt="Sushi">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2 style="background-color: rgba(0, 0, 0, 0.5);">Fresco sushi de salmón</h2>
+                    <h2>Fresco sushi de salmón</h2>
                 </div>
             </div>
         </div>
-        <!-- Añadir controles de carrusel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="margin-left: 10%;">
-            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="margin-right: 10%;">
-            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
@@ -224,33 +210,7 @@
             </div>
         </div>
     </div>    
-
-    <!-- Paginación -->
-    <nav aria-label="Navegación de páginas" class="d-flex justify-content-center mb-4">
-        <ul class="pagination">
-            <li class="page-item">
-                <a class="page-link" href="freds1.html" aria-label="Anterior">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item active"><a class="page-link" href="index.html">Inicio</a></li>
-            <li class="page-item"><a class="page-link" href="html/ensalada.html">Ensalada</a></li>
-            <li class="page-item"><a class="page-link" href="html/tortilla.html">Tortilla</a></li>
-            <li class="page-item">
-                <a class="page-link" href="html/spaguetti.html" aria-label="Siguiente">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Alerta de Cookies -->
-    <div class="alert alert-info alert-dismissible fade show" role="alert" id="cookieAlert">
-        <strong>Avís de Cookies!</strong> Aquest lloc web utilitza cookies per millorar la seva experiència.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-
-    <footer class="bg-dark text-center text-white p-4">
+    <footer class="bg-dark text-center text-white p-4 relative-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
