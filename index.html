@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Food Truck</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">-->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <style>
         .icon {
             width: 30px;
@@ -33,18 +35,60 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="foodDropdown" role="button" data-bs-toggle="dropdown">Menjar</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="foodDropdown" role="button" data-bs-toggle="dropdown">
+                            Menjar
+                        </a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-item">Entrepà de ibèric</li>
-                            <li class="dropdown-item">Burger</li>
+                            <!-- Categoria FREDs -->
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#">Freds</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="freds1.html">Bocata</a></li>
+                                    <li><a class="dropdown-item" href="html/ensalada.html">Ensalada</a></li>
+                                    <li><a class="dropdown-item" href="freds3.html">Sushi</a></li>
+                                </ul>
+                            </li>
+                            <!-- Categoria CALENTS -->
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#">Calents</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="calents1.html">Hamburguesa</a></li>
+                                    <li><a class="dropdown-item" href="calents2.html">Pizza</a></li>
+                                    <li><a class="dropdown-item" href="calents3.html">Spaguetti</a></li>
+                                    <li><a class="dropdown-item" href="calents4.html">Tortilla</a></li>
+                                    <li><a class="dropdown-item" href="calents5.html">Carne</a></li>
+                                    <li><a class="dropdown-item" href="calents6.html">Pez</a></li>
+                                </ul>
+                            </li>
+                            <!-- Categoria DOLÇOS -->
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#">Dolços</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="dolcos1.html">Gelat Magnum</a></li>
+                                    <li><a class="dropdown-item" href="dolcos2.html">Crêpe xocolata</a></li>
+                                    <li><a class="dropdown-item" href="dolcos3.html">Donut</a></li>
+                                    <li><a class="dropdown-item" href="dolcos4.html">Brownie</a></li>
+                                </ul>
+                            </li>
+                            <!-- Categoria BEGUDES -->
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#">Begudes</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="begudes1.html">Coca-Cola</a></li>
+                                    <li><a class="dropdown-item" href="begudes2.html">Cervesa</a></li>
+                                    <li><a class="dropdown-item" href="begudes3.html">Fanta</a></li>
+                                    <li><a class="dropdown-item" href="begudes4.html">Aigua</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="qui-som.html">Qui som</a>
                     </li>
                 </ul>
                 <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-                <button class="btn btn-outline-danger">Logout</button>
+                <button class="btn btn-outline-danger" id="logoutButton">Logout</button>
             </div>
         </div>
     </nav>
@@ -58,17 +102,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="loginForm"> <!-- Afegeix aquest ID si no el tens -->
                         <div class="mb-3">
                             <label class="form-label">Usuari</label>
                             <input type="text" class="form-control" id="username">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Contrasenya</label>
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" id="password">
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel·lar</button>
+                        <button type="button" class="btn btn-secondary" id="cancelButton" data-bs-dismiss="modal">Cancel·lar</button>
                     </form>
                 </div>
             </div>
@@ -214,6 +258,8 @@
     <!-- Footer -->
 
     <script src="js/like_dislike.js"></script>
+    <script src="loginScript.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
