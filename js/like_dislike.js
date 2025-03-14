@@ -4,14 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     likeButtons.forEach(button => {
         button.addEventListener('click', function() {
+            // Obtener el dislike correspondiente a esta tarjeta
+            const card = this.closest('.card');
+            const dislikeButton = card.querySelector('.dislike');
+            
             if (this.src.includes('like1.png')) {
                 this.src = 'img/like2.png';
-                // Cambiar todas las imágenes de dislike a dislike1 si están en dislike2
-                dislikeButtons.forEach(dislikeButton => {
-                    if (dislikeButton.src.includes('dislike2.png')) {
-                        dislikeButton.src = 'img/dislike1.png';
-                    }
-                });
+                // Solo cambiar el dislike de esta tarjeta
+                if (dislikeButton.src.includes('dislike2.png')) {
+                    dislikeButton.src = 'img/dislike1.png';
+                }
             } else if (this.src.includes('like2.png')) {
                 this.src = 'img/like1.png';
             }
@@ -20,14 +22,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     dislikeButtons.forEach(button => {
         button.addEventListener('click', function() {
+            // Obtener el like correspondiente a esta tarjeta
+            const card = this.closest('.card');
+            const likeButton = card.querySelector('.like');
+            
             if (this.src.includes('dislike1.png')) {
                 this.src = 'img/dislike2.png';
-                // Cambiar todas las imágenes de like a like1 si están en like2
-                likeButtons.forEach(likeButton => {
-                    if (likeButton.src.includes('like2.png')) {
-                        likeButton.src = 'img/like1.png';
-                    }
-                });
+                // Solo cambiar el like de esta tarjeta
+                if (likeButton.src.includes('like2.png')) {
+                    likeButton.src = 'img/like1.png';
+                }
             } else if (this.src.includes('dislike2.png')) {
                 this.src = 'img/dislike1.png';
             }
