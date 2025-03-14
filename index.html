@@ -63,22 +63,45 @@
         </div>
     </div>
 
+
+    <br>
     <!-- Carrusel -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+    <div id="carouselExample" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+        <div class="carousel-inner w-50 rounded-5">
             <div class="carousel-item active">
                 <img src="img/bocata.jpg" class="d-block w-100" alt="Bocata">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="background-color: rgba(0, 0, 0, 0.5);">Delicioso bocata de jamón ibérico</h2>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="img/hamburguesa.jpg" class="d-block w-100" alt="Hamburguesa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="background-color: rgba(0, 0, 0, 0.5);">Jugosa hamburguesa con queso</h2>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="img/pizza.jpg" class="d-block w-100" alt="Pizza">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="background-color: rgba(0, 0, 0, 0.5);">Pizza de pepperoni recién horneada</h2>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="img/sushi.jpg" class="d-block w-100" alt="Sushi">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="background-color: rgba(0, 0, 0, 0.5);">Fresco sushi de salmón</h2>
+                </div>
             </div>
         </div>
+        <!-- Añadir controles de carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="margin-left: 10%;">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="margin-right: 10%;">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
 
     <!-- Breadcrumb -->
@@ -96,7 +119,7 @@
                     <img src="img/ensalada.jpg" class="card-img-top" alt="Ensalada">
                     <div class="card-body">
                         <h5 class="card-title">Oferta Especial</h5>
-                        <p class="card-text">Deliciosa ensalada saludable.</p>
+                        <p class="card-text">Deliciosa ensalada saludable, con una mezcla de vegetales frescos y aderezo ligero.</p>
                         <i class="fas fa-thumbs-up text-success"></i>
                         <i class="fas fa-thumbs-down text-danger"></i>
                     </div>
@@ -107,14 +130,35 @@
                     <img src="img/tortilla.jpg" class="card-img-top" alt="Tortilla">
                     <div class="card-body">
                         <h5 class="card-title">Tortilla de patates</h5>
-                        <p class="card-text">Tradicional i saborosa.</p>
+                        <p class="card-text">Tradicional i saborosa tortilla de patatas, hecha con huevos frescos y patatas doradas.</p>
                         <i class="fas fa-thumbs-up text-success"></i>
                         <i class="fas fa-thumbs-down text-danger"></i>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/spaguetti.jpg" class="card-img-top" alt="Espagueti">
+                    <div class="card-body">
+                        <h5 class="card-title">Espagueti a la Boloñesa</h5>
+                        <p class="card-text">Delicioso y clásico plato italiano, con salsa boloñesa casera y espaguetis al dente.</p>
+                        <i class="fas fa-thumbs-up text-success"></i>
+                        <i class="fas fa-thumbs-down text-danger"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/pez.jpg" class="card-img-top" alt="Pez">
+                    <div class="card-body">
+                        <h5 class="card-title">Pez a la Parrilla</h5>
+                        <p class="card-text">Fresco y jugoso pez a la parrilla, sazonado con hierbas y limón para un sabor perfecto.</p>
+                        <i class="fas fa-thumbs-up text-success"></i>
+                        <i class="fas fa-thumbs-down text-danger"></i>
+                    </div>
+                </div>
+            </div>
+
 
     <!-- Footer -->
     <footer class="bg-light text-center p-3">
