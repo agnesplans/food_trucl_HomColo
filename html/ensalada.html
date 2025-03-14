@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Truck</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 15px;
+        }
+
+        footer {
+            position:fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/camionguarro.png" alt="Food Truck Logo" height="50">
+                Food Truck
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="foodDropdown" role="button" data-bs-toggle="dropdown">Menjar</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Entrepà de ibèric</li>
+                            <li class="dropdown-item">Burger</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qui-som.html">Qui som</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <button class="btn btn-outline-danger">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Usuari</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Contrasenya</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel·lar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="padding-left: 50px;">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ensalada</li>
+        </ol>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 d-flex align-items-center">
+                <img src="../img/ensalada.jpg" class="img-fluid rounded me-4" alt="Ensalada Fresca">
+                <div class="flex-grow-1">
+                    <h3>Ensalada Fresca</h3>
+                    <p>Disfruta de nuestra ensalada fresca, preparada con los ingredientes más frescos y saludables. Perfecta para una comida ligera y nutritiva.</p>
+                    <a href="#" class="btn btn-success">Ordenar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="bg-dark text-center text-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Bienvenidos a nuestro Food Truck, donde la pasión por la comida se encuentra con la frescura y el sabor. ¡Disfruta de una experiencia culinaria única!</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="https://www.instagram.com/danielfontz/" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/dh.27.08/" class="text-white me-2"><i>Instagram</i></a></li>
+                        <li><a href="https://github.com/DavidHompaneraCampos/" class="text-white me-2"><i>Github</i></a></li>
+                        <li><a href="https://www.fcf.cat/jugador/2324/lliga-minibenjami-futbol-sala/lliga-divisio-honor-catalana-futbol-sala/grup-2/47375391/33619314" class="text-white"><i>OF</i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-0">&copy; 2025 Food Truck. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/like_dislike.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
