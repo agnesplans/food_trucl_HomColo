@@ -78,18 +78,20 @@ footer.relative-footer {
     width: 100%;
 }
 
-/* Estilo para la alerta de cookies */
-#cookieAlert {
-    position: fixed;    /* Para que se mantenga fija en la pantalla */
-    bottom: 0;         /* En la parte inferior */
-    left: 0;
-    right: 0;
-    margin: 0;
-    z-index: 1000;    /* Para que aparezca por encima de otros elementos */
-    border-radius: 0;
+/* Estilos para la paginación */
+.pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-/* Ajuste para que el footer no se superponga con la alerta de cookies */
+/* Estilos para la alerta de cookies */
+.alert {
+    margin-bottom: 0;
+    border-radius: 0;
+    z-index: 1050;
+}
+
+/* Ajuste para que el footer no se superponga con la alerta */
 body {
-    padding-bottom: 60px;  /* Espacio para la alerta de cookies */
+    padding-bottom: 60px;
 }
